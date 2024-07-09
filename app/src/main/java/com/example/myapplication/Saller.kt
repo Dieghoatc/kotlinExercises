@@ -11,11 +11,9 @@
 
 fun main() {
 
-    val baseSalary: Float = 1600000f
-
+    val baseSalary = 1600000f
     println("Ingrese el valor de la venta =>")
     val sale: Float = readln().toFloat()
-
     commission(sale, baseSalary)
 
 }
@@ -29,10 +27,10 @@ fun calculateSalary(sale: Float, commission: Float, baseSalary: Float): Pair<Flo
 
 fun commission(sale: Float, baseSalary: Float) {
 
-    val commission1: Float = 500000f
-    val commission2: Float = 1000000f
-    val commission3: Float = 1500000f
-    val commission4: Float = 2000000f
+    val commission1 = 500000f
+    val commission2 = 1000000f
+    val commission3 = 1500000f
+    val commission4 = 2000000f
 
     if (sale < commission1) {
         val (commissionTotal, totalSalary) = calculateSalary(sale, 0f, baseSalary)
